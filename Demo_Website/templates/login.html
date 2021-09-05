@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+<meta charset="utf-8">
+<title>Login</title>
+<link rel="stylesheet" href="/static/css/style_login.css">
+</head>
+
+<body>
+    <div class="content">
+        <form action="{% url 'login' %}" method="post" id="loginForm" autocomplete="off">
+            <div class="form sign-in">
+                <h2>WELCOME BACK</h2>
+                <label>
+                    <span>USERNAME</span>
+                    <input type="text" name="username" />
+                </label>
+                <label>
+                    <span>PASSWORD</span>
+                    <input type="password" name="password"/>
+                </label>
+                <Input type="submit" class="submit" value="Login" style="display: block;margin-top: 30px;margin-left: 160px;width: 260px;height: 36px;border-radius: 30px;color: #fff;font-size: 15px;cursor: pointer;">
+            </div>
+            {% csrf_token %}
+        </form>
+        <div class="sub-cont">
+            <div class="img">
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+	
+	<div style="text-align:center;">
+</div>
+</body>
+
+</html>

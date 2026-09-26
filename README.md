@@ -1,6 +1,4 @@
-# BookRecSys-goodreads
- 
-# BookRecSys-goodreads
+ # BookRecSys-goodreads
 
 A book recommender system built on Goodreads data (goodbooks-10k), comparing
 classical, deep learning, and multimodal recommendation algorithms — and
